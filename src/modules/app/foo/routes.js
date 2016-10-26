@@ -3,11 +3,19 @@
 module.exports = /*ngInject*/
     function ($routeProvider) {
         $routeProvider
-            .when('/bar', {
-                templateUrl: 'app/foo/templates/bar.html',
-                controller: 'barController'
+			.when('/', {
+                templateUrl: 'app/foo/templates/photos.html',
+                controller: 'photosController'
+            })
+			.when('/image/:id', {
+                templateUrl: 'app/foo/templates/image.html',
+                controller: 'photoController'
+            })
+			.when('/album/:id', {
+                templateUrl: 'app/foo/templates/photos.html',
+                controller: 'photosController'
             })
             .otherwise({
-                redirectTo: '/bar'
+                redirectTo: '/'
             });
     };

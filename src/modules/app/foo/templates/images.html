@@ -1,0 +1,17 @@
+<div class="photos" layout="column" scroll-directive="addPhotos()">
+	<md-content  layout layout-wrap layout-align="center">
+		<md-card ng-repeat="photo in photos" flex="30" flex-sm="95" flex-md="35">
+			<a ng-href="#/image/{{photo.id}}">
+				<img ng-src="{{photo.url}}">
+			</a>
+			<md-card-title layout="column">
+				<div >
+					<a ng-href="#/album/{{photo.albumId}}" ng-show="album">
+						<md-icon md-svg-src="assets/img/ic_album_white_48px.svg"></md-icon>
+					</a>
+					<div class="md-title">{{photo.title}} </div>
+				</div>
+			</md-card-title>
+		</md-card>
+	</md-content >
+</div>
