@@ -2,4 +2,4 @@
 
 module.exports =
     angular.module('expressly.common.services', [])
-        .factory('apiService', require('./api.service'));
+        .factory('contentService', require('./content.service'));

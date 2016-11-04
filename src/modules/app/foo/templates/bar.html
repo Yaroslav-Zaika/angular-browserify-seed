@@ -1,19 +1,19 @@
-<div class="fabToolbardemoBasicUsage">
-		<md-fab-toolbar md-open="demo.isOpen" ng-class="'md-right'">
-			<md-fab-trigger class="align-with-text">
-				<md-button aria-label="menu" class="md-fab md-primary">
-					<md-icon md-svg-src="assets/img/ic_menu_black_24px.svg"></md-icon>
+<div class="bar">
+	<md-fab-toolbar md-open="isOpen" ng-class="'md-right'">
+		<md-fab-trigger class="align-with-text">
+			<md-button aria-label="menu" class="md-fab md-primary">
+				<md-icon md-svg-src="assets/img/ic_menu_black_24px.svg"></md-icon>
+			</md-button>
+		</md-fab-trigger>
+		<md-toolbar>
+			<md-fab-actions class="md-toolbar-tools">
+				<md-button aria-label="home" class="md-icon-button" ng-href="#/">
+					<md-icon md-svg-src="assets/img/ic_home_black_24px.svg"></md-icon>
 				</md-button>
-			</md-fab-trigger>
-			<md-toolbar>
-				<md-fab-actions class="md-toolbar-tools">
-					<md-button aria-label="home" class="md-icon-button" ng-click="home()">
-						<md-icon md-svg-src="assets/img/ic_home_black_24px.svg"></md-icon>
-					</md-button>
-					<md-button aria-label="search" class="md-icon-button" ng-click="redirectToGoogle()">
-						<md-icon md-svg-src="assets/img/ic_search_black_24px.svg" ng-click></md-icon>
-					</md-button>
-				</md-fab-actions>
-			</md-toolbar>
-		</md-fab-toolbar>
+				<md-button aria-label="search" class="md-icon-button" ng-href="https://www.google.com" target="_blank" rel="noopener">
+					<md-icon md-svg-src="assets/img/ic_search_black_24px.svg" ng-click></md-icon>
+				</md-button>
+			</md-fab-actions>
+		</md-toolbar>
+	</md-fab-toolbar>
 </div>
